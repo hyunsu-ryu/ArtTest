@@ -1,0 +1,4 @@
+include ':app', ':MyLib'
+rootProject.name = "ArtTest"
+
+project(':MyLib').projectDir = new File('C:\\MyLibBase\\MyLib')
