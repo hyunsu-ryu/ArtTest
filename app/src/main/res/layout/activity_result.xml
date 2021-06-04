@@ -1,86 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#d8e3e7"
     tools:context=".ResultActivity">
 
     <Button
         android:id="@+id/btn_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="110dp"
-        android:backgroundTint="#03A9F4"
-        android:text="홈으로"
+        android:layout_width="173dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#51c4d3"
+        android:text="다시하기"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_consult"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_content" />
 
     <Button
         android:id="@+id/btn_consult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="110dp"
-        android:backgroundTint="#03A9F4"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#132c33"
         android:text="상담신청"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_home" />
-
-    <Button
-        android:id="@+id/btn_savegallery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="110dp"
-        android:backgroundTint="#03A9F4"
-        android:text="결과저장하기"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_consult" />
+        app:layout_constraintStart_toEndOf="@+id/btn_home"
+        app:layout_constraintTop_toBottomOf="@+id/result_content" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="286dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="115dp"
         android:text="심리 분석 결과"
+        android:textColor="#132c33"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/result_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="316dp"
+        android:layout_width="340dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
         android:text="결과 내용"
+        android:textColor="#132c33"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/IV_PICTURE" />
 
     <ImageView
         android:id="@+id/IV_PICTURE"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="369dp"
+        android:layout_height="254dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/arttest_upload_frame" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

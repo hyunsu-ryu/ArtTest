@@ -1,0 +1,29 @@
+{
+  "UserAgent": "yangjae_team02",
+  "Version": "1.0",
+  "CredentialsProvider": {
+    "CognitoIdentity": {
+      "Default": {
+      }
+    }
+  },
+  "IdentityManager": {
+    "Default": {}
+  },
+  "PinpointAnalytics": {
+    "Default": {
+
+    }
+  },
+  "PinpointTargeting": {
+    "Default": {
+      "Region": "us-east-2"
+    }
+  },
+  "S3TransferUtility": {
+    "Default": {
+      "Bucket": "yangjae-team02-bucket",
+      "Region": "us-east-2"
+    }
+  }
+}

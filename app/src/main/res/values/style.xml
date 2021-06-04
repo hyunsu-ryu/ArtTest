@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#132c33</item>
+        <item name="colorPrimaryDark">#03A9F4</item>
+        <item name="colorAccent">#03A9F4</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppThemeActionBarLogo" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/purple_500</item>
+        <item name="logo">@drawable/logo</item>
+        <item name="displayOptions">useLogo|showHome</item>
+    </style>
+</resources>

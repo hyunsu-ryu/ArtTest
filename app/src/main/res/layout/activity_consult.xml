@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e3e7"
+
+    >
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#132c33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="204dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="76dp"
+        android:ems="10"
+        android:hint="010-0000-0000"
+        android:inputType="textPersonName"
+        android:textColor="#8F8B8B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="173dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#132c33"
+        android:drawableRight="@android:drawable/stat_sys_headset"
+        android:text="보내기"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
+
+    <Button
+        android:id="@+id/btn_gohome"
+        android:layout_width="181dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#51c4d3"
+        android:drawableRight="@drawable/abc_vector_test"
+        android:text="홈으로"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="117dp"
+        android:text="상담 정보작성"
+        android:textColor="#132c33"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="231dp"
+        android:text="이름"
+        android:textColor="#132c33"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="86dp"
+        android:text="연락처"
+        android:textColor="#132c33"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+</androidx.constraintlayout.widget.ConstraintLayout>
